@@ -28,7 +28,7 @@ export const projects = [
   },
   {
     id: 3,
-    title: "Development a Dynamic Todo Web Application",
+    title: "Dynamic Todo Web Application",
     description:
       "This project is a web-based to-do list application crafted with React and the Context API. It features seamless state management and leverages local storage with JSON for persistent data handling.",
     technologies: ["React", "JavaScript", "TailwindCSS"],
@@ -37,7 +37,7 @@ export const projects = [
   },
   {
     id: 4,
-    title: "Development of a Dynamic E-commerce Web Application",
+    title: "Dynamic E-commerce Web Application",
     description:
       "Utilizing modern web technologies and the MVC architecture, we ensured efficiency, scalability, and future expandability, demonstrating our dedication to software engineering principles and innovation in niche markets.",
     technologies: ["JAVA", "JavaScript", "HTML", "CSS"],
