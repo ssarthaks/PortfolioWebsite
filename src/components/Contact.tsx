@@ -1,18 +1,39 @@
 import React, { FormEvent, useRef } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import { toast } from "react-toastify";
+import emailjs from "@emailjs/browser";
 
 const Contact: React.FC = () => {
-  const formRef = useRef<HTMLFormElement>(null); // Create a reference to the form
+  const formRef = useRef<HTMLFormElement>(null);
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault(); // Prevents the default form submission behavior
-    toast.success("Mail Sent!"); // Displays the toast notification
+    e.preventDefault();
 
-    if (formRef.current) {
-      formRef.current.reset(); // Resets all the fields in the form
-    }
+    // Show a toast notification to inform the user that the mail is being sent
+    toast.info("Sending your message...");
+
+    emailjs
+      .sendForm(
+        import.meta.env.VITE_SERVICE_ID,
+        import.meta.env.VITE_TEMPLATE_ID,
+        formRef.current!,
+        {
+          publicKey: import.meta.env.VITE_PUBLIC_KEY,
+        }
+      )
+      .then(
+        () => {
+          console.log("SUCCESS!");
+          toast.success("Mail Sent Successfully!");
+          if (formRef.current) {
+            formRef.current.reset(); // Reset fields in the form
+          }
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
   };
 
   return (
@@ -27,33 +48,32 @@ const Contact: React.FC = () => {
           Get in Touch
         </motion.h2>
 
-        <form ref={formRef} onSubmit={handleSubmit}>
-          <div className="grid md:grid-cols-2 gap-8">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              className="space-y-6"
-            >
-              <div className="flex items-center space-x-4">
-                <Mail className="text-blue-600 dark:text-blue-400" />
-                <div>
-                  <h3 className="text-lg font-semibold dark:text-white">
-                    Email
-                  </h3>
-                  <p className="dark:text-gray-300">ssarthakxd@gmail.com</p>
-                </div>
+        <div className="grid md:grid-cols-2 gap-8">
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className="space-y-6"
+          >
+            <div className="flex items-center space-x-4">
+              <Mail className="text-blue-600 dark:text-blue-400" />
+              <div>
+                <h3 className="text-lg font-semibold dark:text-white">Email</h3>
+                <p className="dark:text-gray-300">ssarthakxd@gmail.com</p>
               </div>
-              <div className="flex items-center space-x-4">
-                <MapPin className="text-blue-600 dark:text-blue-400" />
-                <div>
-                  <h3 className="text-lg font-semibold dark:text-white">
-                    Location
-                  </h3>
-                  <p className="dark:text-gray-300">Syuchatar, Kathmandu</p>
-                </div>
+            </div>
+            <div className="flex items-center space-x-4">
+              <MapPin className="text-blue-600 dark:text-blue-400" />
+              <div>
+                <h3 className="text-lg font-semibold dark:text-white">
+                  Location
+                </h3>
+                <p className="dark:text-gray-300">Syuchatar, Kathmandu</p>
               </div>
-            </motion.div>
+            </div>
+          </motion.div>
+
+          <form ref={formRef} onSubmit={handleSubmit}>
             <motion.div
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -67,6 +87,7 @@ const Contact: React.FC = () => {
                 <input
                   type="text"
                   required
+                  name="user_name"
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white p-2"
                 />
               </div>
@@ -77,6 +98,7 @@ const Contact: React.FC = () => {
                 <input
                   type="email"
                   required
+                  name="user_email"
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white p-2"
                 />
               </div>
@@ -87,6 +109,7 @@ const Contact: React.FC = () => {
                 <textarea
                   rows={4}
                   required
+                  name="message"
                   className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                 ></textarea>
               </div>
@@ -99,8 +122,8 @@ const Contact: React.FC = () => {
                 Send Message
               </motion.button>
             </motion.div>
-          </div>
-        </form>
+          </form>
+        </div>
       </div>
     </section>
   );
