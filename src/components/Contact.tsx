@@ -7,8 +7,21 @@ import emailjs from "@emailjs/browser";
 const Contact: React.FC = () => {
   const formRef = useRef<HTMLFormElement>(null);
 
+  // Email regex pattern for basic email validation
+  const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    // Get the email value from the form
+    const formData = new FormData(formRef.current!);
+    const email = formData.get("user_email") as string;
+
+    // Validate email using regex
+    if (!emailRegex.test(email)) {
+      toast.error("Please enter a valid email address.");
+      return;
+    }
 
     // Show a toast notification to inform the user that the mail is being sent
     toast.info("Sending your message...");
