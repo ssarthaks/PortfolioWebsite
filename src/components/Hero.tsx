@@ -39,7 +39,7 @@ const Hero: React.FC = () => {
             {[
               { Icon: Github, href: "https://github.com/ssarthaks" },
               { Icon: Linkedin, href: "https://linkedin.com/in/ssarthaks" },
-              { Icon: Mail, href: "ssarthakxd@gmail.com" },
+              { Icon: Mail, href: "mailto:ssarthakxd@gmail.com" },
             ].map(({ Icon, href }, index) => (
               <motion.a
                 key={index}
