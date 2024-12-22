@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { projects } from "../data/portfolio";
-import { Github, ExternalLink } from "lucide-react";
+import { Github } from "lucide-react";
 
 const Projects: React.FC = () => {
   return (
@@ -51,23 +51,13 @@ const Projects: React.FC = () => {
                           <Github size={24} />
                         </a>
                       )}
-                      {project.link && (
-                        <a
-                          href={project.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-white hover:text-blue-400"
-                        >
-                          <ExternalLink size={24} />
-                        </a>
-                      )}
                     </div>
                   </div>
                 </div>
 
                 <div className="p-6">
                   <h3 className="text-xl font-bold dark:text-white mb-2">
-                    {project.title}
+                    <a href={project.github} target="_blank">{project.title}</a>
                   </h3>
                   <p className="text-gray-600 dark:text-gray-300 mb-4">
                     {project.description}

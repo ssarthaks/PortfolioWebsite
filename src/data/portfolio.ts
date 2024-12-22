@@ -3,7 +3,7 @@ import certificate2 from "../assets/Certifications/ReactTraining.jpg";
 import certificate3 from "../assets/Certifications/ReactEssentialTraining.jpg";
 
 import project1 from "../assets/Projects/MernBlog.jpg";
-import project2 from "../assets/Projects/MernBlog.jpg";
+import project2 from "../assets/Projects/TaskMng.jpg";
 import project3 from "../assets/Projects/TodoList.jpg";
 import project4 from "../assets/Projects/Ecommerce.jpg";
 
@@ -100,7 +100,7 @@ export const experience = [
     id: 1,
     role: "ReactJS Intern",
     company: "Prince Lab Pvt. Ltd.",
-    address: "Budanilkantha Kathmandu",
+    address: "Budanilkantha, Kathmandu",
     duration: "Jul 2024 - November 2024",
   },
   {

@@ -101,7 +101,7 @@ const Contact: React.FC = () => {
                   type="text"
                   required
                   name="user_name"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white p-2"
+                  className="mt-1 block w-full rounded-md border-2 dark:border-0 border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white p-2"
                 />
               </div>
               <div>
@@ -112,7 +112,7 @@ const Contact: React.FC = () => {
                   type="email"
                   required
                   name="user_email"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white p-2"
+                  className="mt-1 block w-full rounded-md border-2 dark:border-0 border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white p-2"
                 />
               </div>
               <div>
@@ -123,7 +123,7 @@ const Contact: React.FC = () => {
                   rows={4}
                   required
                   name="message"
-                  className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+                  className="mt-1 block w-full rounded-md border-2 dark:border-0 border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
                 ></textarea>
               </div>
               <motion.button
