@@ -98,7 +98,7 @@ export const education = [
 export const experience = [
   {
     id: 1,
-    role: "ReactJS Intern",
+    role: "ReactJs Intern",
     company: "Prince Lab Pvt. Ltd.",
     address: "Budanilkantha, Kathmandu",
     duration: "Jul 2024 - November 2024",
