@@ -25,9 +25,9 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.4 }}
-            className="text-xl sm:text-2xl dark:text-gray-300 mb-8"
+            className="text-xl font-medium sm:text-2xl dark:text-gray-300 mb-8"
           >
-            Full Stack Developer | AI Enthusiast
+            Full Stack JS Developer | AI Aspirant
           </motion.p>
 
           <motion.div
@@ -60,7 +60,7 @@ const Hero: React.FC = () => {
       <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2">
         <motion.div
           animate={{
-            y: [0, 10, 0],
+            y: [0, 15, 0],
           }}
           transition={{
             duration: 1.5,

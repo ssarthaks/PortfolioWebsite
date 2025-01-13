@@ -8,6 +8,7 @@ import Hero from "./components/Hero";
 import { ToastContainer,Bounce } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Experience } from "./components/Experience";
+import Copyright from "./components/Copyright";
 
 export function App() {
   const { isDark, toggleTheme } = useTheme();
@@ -37,6 +38,7 @@ export function App() {
           <Education />
           <Experience />
           <Contact />
+          <Copyright />
         </main>
       </div>
     </div>

@@ -17,7 +17,7 @@ export const Education: React.FC = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl font-bold text-center dark:text-white mb-12"
+          className="text-3xl font-extrabold text-center dark:text-white mb-12"
         >
           Education & Certificates
         </motion.h2>
