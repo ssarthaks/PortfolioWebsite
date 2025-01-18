@@ -4,36 +4,49 @@ import certificate3 from "../assets/Certifications/ReactEssentialTraining.jpg";
 
 import project1 from "../assets/Projects/MernBlog.jpg";
 import project2 from "../assets/Projects/TaskMng.jpg";
-import project3 from "../assets/Projects/TodoList.jpg";
 import project4 from "../assets/Projects/Ecommerce.jpg";
 
 export const projects = [
   {
     id: 1,
+    title: "Full Stack Social Media Application",
+    description:
+      "A personal project focused on user authentication and CRUD operations for posts and profiles. Currently in progress...",
+    technologies: [
+      "React",
+      "TypeScript",
+      "Node",
+      "Express.js",
+      "MongoDB",
+      "TailwindCSS",
+    ],
+    image: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTJraTlpMzZtNHN1dzRxZjV2MHhhYnpsaXJsejQzeDNnejIyODdhdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jZeZtoObz3wPPcjAhj/giphy.gif",
+    github: "https://github.com/ssarthaks/MERN_SocialMediaApp",
+  },
+  {
+    id: 2,
     title: "Full Stack Blog Application",
     description:
       "As part of my learning journey, I built a full-stack blog app using the MERN stack (MongoDB, Express, React, Node.js).",
-    technologies: ["React", "Node.js", "Express.js", "MongoDB", "TailwindCSS"],
+    technologies: [
+      "React.js",
+      "JavaScript",
+      "Node",
+      "Express.js",
+      "MongoDB",
+      "Vanilla CSS",
+    ],
     image: project1,
     github: "https://github.com/ssarthaks/MERN_BlogApp",
   },
   {
-    id: 2,
+    id: 3,
     title: "Dynamic Task Management System",
     description:
       "This project is a task management system developed using React and Redux as part of my college summer class assignment.",
     technologies: ["React", "JavaScript", "TailwindCSS"],
     image: project2,
     github: "https://github.com/ssarthaks/React_TaskManagementSystem",
-  },
-  {
-    id: 3,
-    title: "Dynamic Todo Web Application",
-    description:
-      "This project is a web-based to-do list application crafted with React and the Context API. It features seamless state management and leverages local storage with JSON for persistent data handling.",
-    technologies: ["React", "JavaScript", "TailwindCSS"],
-    image: project3,
-    github: "https://github.com/ssarthaks/P07_React_ContextAPI_LocalStorage",
   },
   {
     id: 4,
