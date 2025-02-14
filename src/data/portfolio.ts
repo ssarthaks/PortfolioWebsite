@@ -13,7 +13,7 @@ export const projects = [
     id: 1,
     title: "Smart Pet Store (FYP)- 80%",
     description:
-      "Smart Pet Store is a MERN web app for pet owners to book and manage veterinary and grooming services. It features user profiles, appointment tracking, and reminders. Admins can manage schedules, availability, and service queries, while users can also provide feedback. ",
+      "Smart Pet Store is a MERN web app for pet owners to book and manage veterinary and grooming services. It features user profiles, appointment tracking, and reminders. Admins can manage schedules, availability, and service queries, while users can also provide feedback.",
     note: "Private GitHub Repository due to ongoing development.",
     technologies: [
       "React",
@@ -32,7 +32,7 @@ export const projects = [
     id: 2,
     title: "Luxurymandu Frontend",
     description:
-      "Luxury Mandu is a frontend-only web application that emphasizes clean, modern UI/UX design. It offers a seamless user experience without backend functionality or payment integrations, focusing solely on intuitive design and user-centric interactions..",
+      "Luxurymandu is a frontend-only web application that emphasizes clean, modern UI/UX design. It offers a seamless user experience without backend functionality or payment integrations, focusing solely on intuitive design and user-centric interactions.",
     technologies: [
       "React",
       "JavaScript",
@@ -93,7 +93,7 @@ export const projects = [
     id: 6,
     title: "Kanban Board Drag and Drop",
     description:
-      "The Kanban Board is a task management app built with React and TypeScript, featuring drag-and-drop, customizable columns, and local storage persistence. It uses @hello-pangea/dnd for task movement, Zustand for state management, and TailwindCSS for styling..",
+      "The Kanban Board is a task management app built with React and TypeScript, featuring drag-and-drop, customizable columns, and local storage persistence. It uses @hello-pangea/dnd for task movement, Zustand for state management, and TailwindCSS for styling.",
     technologies: [
       "React",
       "TypeScript",
