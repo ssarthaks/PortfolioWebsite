@@ -56,12 +56,34 @@ const Projects: React.FC = () => {
                 </div>
 
                 <div className="p-6">
-                  <h3 className="text-xl font-bold dark:text-white mb-2">
-                    <a href={project.github} target="_blank">{project.title}</a>
-                  </h3>
-                  <p className="text-gray-600 dark:text-gray-300 mb-4">
+                  <div className="flex gap-2 flex-wrap mb-4">
+                    <div>
+                      <h3 className="text-xl font-bold dark:text-white">
+                        <a href={project.github} target="_blank">
+                          {project.title}
+                        </a>
+                      </h3>
+                    </div>
+                    <div className="mt-1">
+                      {project.livelink && (
+                        <a
+                          href={project.livelink}
+                          target="_blank"
+                          className="px-4 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm"
+                        >
+                          Live Link
+                        </a>
+                      )}
+                    </div>
+                  </div>
+                  <p className="text-gray-600 dark:text-gray-300 mb-2">
                     {project.description}
                   </p>
+                  {project.note && (
+                    <p className="text-gray-600 dark:text-gray-300 mb-4">
+                      <strong>{project.note}</strong>
+                    </p>
+                  )}
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
                       <span

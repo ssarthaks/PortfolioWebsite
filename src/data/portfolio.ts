@@ -2,13 +2,51 @@ import certificate1 from "../assets/Certifications/MernTraining.jpg";
 import certificate2 from "../assets/Certifications/ReactTraining.jpg";
 import certificate3 from "../assets/Certifications/ReactEssentialTraining.jpg";
 
-import project1 from "../assets/Projects/MernBlog.jpg";
-import project2 from "../assets/Projects/TaskMng.jpg";
-import project4 from "../assets/Projects/Ecommerce.jpg";
+import mernblog from "../assets/Projects/MernBlog.jpg";
+import smartpetstore from "../assets/Projects/LogoDesign.png";
+import ecommerce from "../assets/Projects/Ecommerce.jpg";
+import luxurymandu from "../assets/Projects/Luxurymandu.jpg";
+import kanbanboard from "../assets/Projects/kanbanboard.jpg";
 
 export const projects = [
   {
     id: 1,
+    title: "Smart Pet Store (FYP)- 80%",
+    description:
+      "Smart Pet Store is a MERN web app for pet owners to book and manage veterinary and grooming services. It features user profiles, appointment tracking, and reminders. Admins can manage schedules, availability, and service queries, while users can also provide feedback. ",
+    note: "Private GitHub Repository due to ongoing development.",
+    technologies: [
+      "React",
+      "Node",
+      "Express.js",
+      "JavaScript",
+      "TypeScript",
+      "MySQL",
+      "TailwindCSS",
+      "Nodemailer",
+      "Cloudinary",
+    ],
+    image: smartpetstore,
+  },
+  {
+    id: 2,
+    title: "Luxurymandu Frontend",
+    description:
+      "Luxury Mandu is a frontend-only web application that emphasizes clean, modern UI/UX design. It offers a seamless user experience without backend functionality or payment integrations, focusing solely on intuitive design and user-centric interactions..",
+    technologies: [
+      "React",
+      "JavaScript",
+      "TypeScript",
+      "TailwindCSS",
+      "ShadCN",
+      "Framer-motion",
+    ],
+    image: luxurymandu,
+    github: "https://github.com/ssarthaks/Luxurymandu",
+    livelink: "https://luxurymandu-sarthak.netlify.app/",
+  },
+  {
+    id: 3,
     title: "Full Stack Social Media Application",
     description:
       "A personal project focused on user authentication and CRUD operations for posts and profiles. Currently in progress...",
@@ -20,11 +58,12 @@ export const projects = [
       "MongoDB",
       "TailwindCSS",
     ],
-    image: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTJraTlpMzZtNHN1dzRxZjV2MHhhYnpsaXJsejQzeDNnejIyODdhdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jZeZtoObz3wPPcjAhj/giphy.gif",
+    image:
+      "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExOTJraTlpMzZtNHN1dzRxZjV2MHhhYnpsaXJsejQzeDNnejIyODdhdiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/jZeZtoObz3wPPcjAhj/giphy.gif",
     github: "https://github.com/ssarthaks/MERN_SocialMediaApp",
   },
   {
-    id: 2,
+    id: 4,
     title: "Full Stack Blog Application",
     description:
       "As part of my learning journey, I built a full-stack blog app using the MERN stack (MongoDB, Express, React, Node.js).",
@@ -36,27 +75,35 @@ export const projects = [
       "MongoDB",
       "Vanilla CSS",
     ],
-    image: project1,
+    image: mernblog,
     github: "https://github.com/ssarthaks/MERN_BlogApp",
   },
   {
-    id: 3,
-    title: "Dynamic Task Management System",
-    description:
-      "This project is a task management system developed using React and Redux as part of my college summer class assignment.",
-    technologies: ["React", "JavaScript", "TailwindCSS"],
-    image: project2,
-    github: "https://github.com/ssarthaks/React_TaskManagementSystem",
-  },
-  {
-    id: 4,
+    id: 5,
     title: "Dynamic E-commerce Web Application",
     description:
       "Utilizing modern web technologies and the MVC architecture, we ensured efficiency, scalability, and future expandability, demonstrating our dedication to software engineering principles and innovation in niche markets.",
     technologies: ["JAVA", "JavaScript", "HTML", "CSS"],
-    image: project4,
+    image: ecommerce,
     github:
       "https://github.com/ssarthaks/Development_of_an_Ecommerce_Platform_JAVA",
+  },
+
+  {
+    id: 6,
+    title: "Kanban Board Drag and Drop",
+    description:
+      "The Kanban Board is a task management app built with React and TypeScript, featuring drag-and-drop, customizable columns, and local storage persistence. It uses @hello-pangea/dnd for task movement, Zustand for state management, and TailwindCSS for styling..",
+    technologies: [
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "Zustand",
+      "@hello-pangea/dnd",
+    ],
+    image: kanbanboard,
+    github: "https://github.com/ssarthaks/KanbanBoardDnD",
+    livelink: "https://kanbanboard-sarthak.netlify.app/",
   },
 ];
 
