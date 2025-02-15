@@ -5,7 +5,7 @@ import certificate3 from "../assets/Certifications/ReactEssentialTraining.jpg";
 import mernblog from "../assets/Projects/MernBlog.jpg";
 import smartpetstore from "../assets/Projects/LogoDesign.png";
 import ecommerce from "../assets/Projects/Ecommerce.jpg";
-import luxurymandu from "../assets/Projects/Luxurymandu.jpg";
+import luxurymandu from "../assets/Projects/luxurymandu.jpg";
 import kanbanboard from "../assets/Projects/kanbanboard.jpg";
 
 export const projects = [
