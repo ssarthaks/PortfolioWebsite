@@ -7,7 +7,7 @@ import smartpetstore from "../assets/Projects/LogoDesign.png";
 import ecommerce from "../assets/Projects/Ecommerce.jpg";
 import luxurymandu from "../assets/Projects/luxurymandu.jpg";
 // import kanbanboard from "../assets/Projects/kanbanboard.jpg";
-import nitronics from "../assets/Projects/Nitronics.jpg";
+import nitronics from "../assets/Projects/nitronics.jpg";
 
 export const projects = [
   {
