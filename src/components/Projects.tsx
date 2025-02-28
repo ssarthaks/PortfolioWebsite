@@ -84,7 +84,7 @@ const Projects: React.FC = () => {
                       <strong>{project.note}</strong>
                     </p>
                   )}
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap gap-2 mt-4">
                     {project.technologies.map((tech, techIndex) => (
                       <span
                         key={techIndex}

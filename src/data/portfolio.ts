@@ -6,7 +6,8 @@ import mernblog from "../assets/Projects/MernBlog.jpg";
 import smartpetstore from "../assets/Projects/LogoDesign.png";
 import ecommerce from "../assets/Projects/Ecommerce.jpg";
 import luxurymandu from "../assets/Projects/luxurymandu.jpg";
-import kanbanboard from "../assets/Projects/kanbanboard.jpg";
+// import kanbanboard from "../assets/Projects/kanbanboard.jpg";
+import nitronics from "../assets/Projects/Nitronics.jpg";
 
 export const projects = [
   {
@@ -30,6 +31,24 @@ export const projects = [
   },
   {
     id: 2,
+    title: "Nitronics Ecommerce Project",
+    description:
+      "Nitronics Store is a full-stack electronics e-commerce platform with user order management and an admin panel for product & order control. Built with React, Node.js, Express & MySQL.",
+    technologies: [
+      "React",
+      "Node",
+      "Express.js",
+      "JavaScript",
+      "MySQL",
+      "TailwindCSS",
+      "Nodemailer",
+      "Framer-motion",
+    ],
+    image: nitronics,
+    github: "https://github.com/ssarthaks/NitronicsEcommerce",
+  },
+  {
+    id: 3,
     title: "Luxurymandu Frontend",
     description:
       "Luxurymandu is a frontend-only web application that emphasizes clean, modern UI/UX design. It offers a seamless user experience without backend functionality or payment integrations, focusing solely on intuitive design and user-centric interactions.",
@@ -46,7 +65,7 @@ export const projects = [
     livelink: "https://luxurymandu-sarthak.netlify.app/",
   },
   {
-    id: 3,
+    id: 4,
     title: "Full Stack Social Media Application",
     description:
       "A personal project focused on user authentication and CRUD operations for posts and profiles. Currently in progress...",
@@ -63,7 +82,7 @@ export const projects = [
     github: "https://github.com/ssarthaks/MERN_SocialMediaApp",
   },
   {
-    id: 4,
+    id: 5,
     title: "Full Stack Blog Application",
     description:
       "As part of my learning journey, I built a full-stack blog app using the MERN stack (MongoDB, Express, React, Node.js).",
@@ -79,7 +98,7 @@ export const projects = [
     github: "https://github.com/ssarthaks/MERN_BlogApp",
   },
   {
-    id: 5,
+    id: 6,
     title: "Dynamic E-commerce Web Application",
     description:
       "Utilizing modern web technologies and the MVC architecture, we ensured efficiency, scalability, and future expandability, demonstrating our dedication to software engineering principles and innovation in niche markets.",
@@ -88,23 +107,22 @@ export const projects = [
     github:
       "https://github.com/ssarthaks/Development_of_an_Ecommerce_Platform_JAVA",
   },
-
-  {
-    id: 6,
-    title: "Kanban Board Drag and Drop",
-    description:
-      "The Kanban Board is a task management app built with React and TypeScript, featuring drag-and-drop, customizable columns, and local storage persistence. It uses @hello-pangea/dnd for task movement, Zustand for state management, and TailwindCSS for styling.",
-    technologies: [
-      "React",
-      "TypeScript",
-      "TailwindCSS",
-      "Zustand",
-      "@hello-pangea/dnd",
-    ],
-    image: kanbanboard,
-    github: "https://github.com/ssarthaks/KanbanBoardDnD",
-    livelink: "https://kanbanboard-sarthak.netlify.app/",
-  },
+  // {
+  //   id: 7,
+  //   title: "Kanban Board Drag and Drop",
+  //   description:
+  //     "The Kanban Board is a task management app built with React and TypeScript, featuring drag-and-drop, customizable columns, and local storage persistence. It uses @hello-pangea/dnd for task movement, Zustand for state management, and TailwindCSS for styling.",
+  //   technologies: [
+  //     "React",
+  //     "TypeScript",
+  //     "TailwindCSS",
+  //     "Zustand",
+  //     "@hello-pangea/dnd",
+  //   ],
+  //   image: kanbanboard,
+  //   github: "https://github.com/ssarthaks/KanbanBoardDnD",
+  //   livelink: "https://kanbanboard-sarthak.netlify.app/",
+  // },
 ];
 
 export const certificates = [
