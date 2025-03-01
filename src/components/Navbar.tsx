@@ -57,7 +57,7 @@ const Navbar = () => {
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex-shrink-0 font-extrabold text-xl dark:text-white flex items-center gap-2"
+            className="flex-shrink-0 font-extrabold text-xl dark:text-white flex items-center gap-2 cursor-pointer"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           >
             <Code className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
