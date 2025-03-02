@@ -54,17 +54,17 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <motion.div
+            <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
-            className="flex-shrink-0 font-extrabold text-xl dark:text-white flex items-center gap-2 cursor-pointer"
+            className="flex-shrink-0 font-extrabold text-xl dark:text-white flex items-center gap-2 cursor-pointer select-none"
             onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-          >
+            >
             <Code className="h-6 w-6 text-indigo-600 dark:text-indigo-400" />
             <span className="bg-gradient-to-r from-indigo-600 to-purple-600 dark:from-indigo-400 dark:to-purple-400 bg-clip-text text-transparent">
               Portfolio
             </span>
-          </motion.div>
+            </motion.div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center space-x-4">
